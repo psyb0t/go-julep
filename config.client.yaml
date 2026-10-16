@@ -1,0 +1,14 @@
+# Client only. The models come from config.yaml into models.gen.go; the
+# settings below must match it so both files agree on type names.
+package: julep
+generate:
+  client: true
+output: client.gen.go
+output-options:
+  resolve-type-name-collisions: true
+  type-mapping:
+    number:
+      default:
+        type: float64
+compatibility:
+  always-prefix-enum-values: true
