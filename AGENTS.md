@@ -10,7 +10,7 @@ The client is generated. `make generate` runs `go generate ./...`, which runs th
 2. `go tool oapi-codegen --config=config.yaml api/openapi.yaml` writes the models to `models.gen.go`.
 3. `go tool oapi-codegen --config=config.client.yaml api/openapi.yaml` writes `Client` and `ClientWithResponses` to `client.gen.go`.
 
-The output is split in two because a single file runs past 40,000 lines. No patch step is needed today; the spec generates as published. If one becomes necessary it goes in `scripts/` and runs between the fetch and the generate steps.
+The output is split in two because a single file runs past 40,000 lines. No patch step is needed; the spec generates as published. If one becomes necessary it goes in `scripts/` and runs between the fetch and the generate steps.
 
 ## Stack
 

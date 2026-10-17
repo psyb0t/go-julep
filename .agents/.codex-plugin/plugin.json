@@ -1,6 +1,6 @@
 {
   "name": "go-julep",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unofficial Go client for the Julep API: typed methods for agents, tools, tasks, executions, sessions and chat, users, docs, files and secrets, generated from Julep's OpenAPI spec.",
   "author": { "name": "psyb0t", "url": "https://github.com/psyb0t" },
   "homepage": "https://github.com/psyb0t/go-julep",

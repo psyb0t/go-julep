@@ -54,6 +54,8 @@ func main() {
 
 The same code is in `example_test.go`, so `make test` checks that it compiles.
 
+The full API, with the spec's descriptions as doc comments, is in the [Go reference](https://pkg.go.dev/github.com/psyb0t/go-julep) and in `go doc github.com/psyb0t/go-julep`.
+
 Method names come from the spec's operation IDs, which repeat the path and the HTTP method, so they are long: `ListAgentsAgentsGet` lists agents, `CreateTaskExecutionTasksTaskIdExecutionsPost` starts a task execution, `ChatSessionsSessionIdChatPost` sends a chat message in a session.
 
 ## Auth
