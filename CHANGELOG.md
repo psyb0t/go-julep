@@ -2,6 +2,10 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.1.1, 2026-10-17
+
+- Documentation only. The README and `AGENTS.md` describe the daily regeneration workflow: what it checks, how it fixes failing checks, how it picks the next version and which paths a fix may not touch.
+
 ## v0.1.0, 2026-10-16
 
 - Added `julep`, a REST client generated with oapi-codegen from Julep's OpenAPI document (Julep Agents API, spec version 0.4.0, OpenAPI 3.1.0, hosted by Stainless for the official SDKs). It covers all 37 paths: agents, docs and search, embeddings, executions and transitions, files, health, jobs, projects, secrets, sessions and chat, tasks, Temporal payload decoding, tools and users.

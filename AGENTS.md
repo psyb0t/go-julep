@@ -48,6 +48,7 @@ make sec       # gitleaks, govulncheck, semgrep
 - Method names come from FastAPI-style operation IDs and carry the path and HTTP method (`ListAgentsAgentsGet`). A spec update that changes an operation ID renames the method.
 - `scripts/sec.sh` excludes one semgrep rule, the `interface{}` unmarshal check, because oapi-codegen decodes free-form `additionalProperties` that way.
 - CI skips the generate drift check, because the spec changes upstream without notice. Regenerate locally and commit the result.
+- `.github/workflows/regen.yml` regenerates the client every day and releases the result. When the checks fail, Claude edits the repository to fix them, but a fix may not touch the paths listed under `fix_protected_paths` in that workflow: the workflows, the Makefile, `AGENTS.md`, `.agents/rules/`, the lint, security and spec download scripts and their configs. A problem that needs a change there fails the run and needs a manual fix.
 
 ## Rules
 
