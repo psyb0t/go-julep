@@ -14,7 +14,7 @@ The output is split in two because a single file runs past 40,000 lines. No patc
 
 ## Stack
 
-- Go 1.26.9, one package `julep` at the module root.
+- Go 1.26.10, one package `julep` at the module root.
 - oapi-codegen v2 as a `go.mod` tool, with `github.com/oapi-codegen/runtime` at runtime.
 - Both configs map `number` to `float64`.
 
